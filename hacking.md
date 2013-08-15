@@ -12,7 +12,7 @@ TODO
 TODO
 
 ##Code Organization
-TODO
+Plugin framework pulled from Tom McFarlin's [WordPress Plugin Boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate).
 
 ##Backend
 TODO
