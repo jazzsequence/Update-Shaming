@@ -318,4 +318,14 @@ class Update_Shaming {
 		return false;
 	}
 
+	public function up_to_date_check($post_date) {
+		$today = date('Y-m-d');
+		$six_months_ago = date( 'Ymd', strtotime( $today . ' -6 months' ) );
+
+		if ( $post_date > $six_months_ago )
+			return true;
+
+		return false;
+	}
+
 }
