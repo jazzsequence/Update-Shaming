@@ -25,3 +25,6 @@ Shaming content editors into updating page content that has not been touched in 
 ##Backend
 * The main class is `Update_Shaming`. Probably some of the functions should start getting split out into other files.
 * Dashboard page is under Pages, at `edit.php?post_type=page&page=update-shaming` and is restricted to anyone who can `publish_page`.
+
+##TODO
+* It would be nice to have an numeric icon with a count of the total out-of-date pages that appears next to the menu title.
