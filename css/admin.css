@@ -2,3 +2,25 @@
 	text-align: center;
 	margin: 20px 0;
 }
+.ood .id {
+	text-align: center;
+	width: 5%;
+}
+.ood .fixit {
+	width: 5%;
+}
+.ood .modified {
+	width: 20%;
+}
+.ood .title {
+	width: 70%;
+}
+.reaction-wrap img {
+	max-width: 100%;
+}
+dd.wp-caption-dd {
+	margin: 0;
+}
+.caption {
+	font-size: 1.4em;
+}

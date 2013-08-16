@@ -129,11 +129,10 @@
 			echo '<h3>Holy fuck! I couldn\'t find any pages! What the hell is wrong with you?</h3>';
 		endif;
 
-
 		if ( $five_year_heading ) {
 			echo $wrap_open;
-			echo '<img src="'. plugins_url( 'reactions/five-years/' . rand(0,10) . '.gif', dirname(__FILE__) ) . '" class="reactiongif" />';
 			echo $five_year_heading;
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $five_year_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $five_year_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $five_year_reaction['source'] . '</dd></dl>';
 			echo $wrap_close;
 			echo $table_open;
 			echo $table_head;
@@ -142,8 +141,8 @@
 		}
 		if ( $four_year_heading ) {
 			echo $wrap_open;
-			echo '<img src="'. plugins_url( 'reactions/four-years/' . rand(0,9) . '.gif', dirname(__FILE__) ) . '" class="reactiongif" />';
 			echo $four_year_heading;
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $four_year_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $four_year_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $four_year_reaction['source'] . '</dd></dl>';
 			echo $wrap_close;
 			echo $table_open;
 			echo $table_head;
@@ -152,8 +151,8 @@
 		}
 		if ( $three_year_heading ) {
 			echo $wrap_open;
-			echo '<img src="'. plugins_url( 'reactions/three-years/' . rand(0,9) . '.gif', dirname(__FILE__) ) . '" class="reactiongif" />';
 			echo $three_year_heading;
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $three_year_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $three_year_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $three_year_reaction['source'] . '</dd></dl>';
 			echo $wrap_close;
 			echo $table_open;
 			echo $table_head;
@@ -162,8 +161,8 @@
 		}
 		if ( $two_year_heading ) {
 			echo $wrap_open;
-			echo '<img src="'. plugins_url( 'reactions/two-years/' . rand(0,9) . '.gif', dirname(__FILE__) ) . '" class="reactiongif" />';
 			echo $two_year_heading;
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $two_year_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $two_year_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $two_year_reaction['source'] . '</dd></dl>';
 			echo $wrap_close;
 			echo $table_open;
 			echo $table_head;
@@ -172,8 +171,8 @@
 		}
 		if ( $one_year_heading ) {
 			echo $wrap_open;
-			echo '<img src="'. plugins_url( 'reactions/one-year/' . rand(0,9) . '.gif', dirname(__FILE__) ) . '" class="reactiongif" />';
 			echo $one_year_heading;
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $one_year_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $one_year_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $one_year_reaction['source'] . '</dd></dl>';
 			echo $wrap_close;
 			echo $table_open;
 			echo $table_head;
@@ -182,17 +181,17 @@
 		}
 		if ( $six_month_heading ) {
 			echo $wrap_open;
-			echo '<img src="'. plugins_url( 'reactions/six-months/' . rand(0,9) . '.gif', dirname(__FILE__) ) . '" class="reactiongif" />';
 			echo $six_month_heading;
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $six_month_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $six_month_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $six_month_reaction['source'] . '</dd></dl>';
 			echo $wrap_close;
 			echo $table_open;
 			echo $table_head;
 			echo $six_month_posts;
 			echo $table_close;
 		}
-		if ( $winning ) {
+		if ( !$five_year_heading && !$four_year_heading && !$three_year_heading && !$two_year_heading && !$one_year_heading && !$six_month_heading && $winning ) {
 			echo $wrap_open;
-			echo '<img src="'. plugins_url( 'reactions/winning/' . rand(0,5) . '.gif', dirname(__FILE__) ) . '" class="reactiongif" />';
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $winning_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $winning_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $winning_reaction['source'] . '</dd></dl>';
 			echo $winning;
 			echo $wrap_close;
 		}
