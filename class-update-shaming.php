@@ -460,9 +460,9 @@ class Update_Shaming {
 					'caption' => __('Nice work! (I guess...)', 'update-shaming')
 				),
 				4 => array(
-					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/06/Jay-Z-so-so.gif',
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/03/1264319881771.gif',
 					'source' => 'reactiongifs.com',
-					'caption' => __('Jay-Z thinks this is so-so.', 'update-shaming')
+					'caption' => __('Not good enough.', 'update-shaming')
 				)
 			),
 			'six-months' => array(
@@ -482,9 +482,9 @@ class Update_Shaming {
 					'caption' => __('*sarcastic clapping*', 'update-shaming')
 				),
 				3 => array(
-					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/03/1264319881771.gif',
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/06/Jay-Z-so-so.gif',
 					'source' => 'reactiongifs.com',
-					'caption' => __('...Nope.', 'update-shaming')
+					'caption' => __('Jay-Z thinks this is so-so.', 'update-shaming')
 				),
 				4 => array(
 					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/01/oh-please.gif',
