@@ -13,8 +13,7 @@
  *
  * @wordpress-plugin
  * Plugin Name: Update Shaming
- * Plugin URI:  TODO
- * Description: TODO
+ * Description: Shaming content editors into updating page content that has not been touched in a long time, while simultaneously providing an overview of the oldest pages on a site.
  * Version:     0.1
  * Author:      Chris Reynolds
  * Author URI:  http://museumthemes.com
