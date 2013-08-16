@@ -142,7 +142,7 @@ class Update_Shaming {
 			'edit.php?post_type=page',
 			__( 'Out of Date Pages', 'update-shaming' ),
 			__( 'Out of Date Pages', 'update-shaming' ),
-			'publish_page',
+			'publish_pages',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' )
 		);
