@@ -40,10 +40,5 @@ define( SHAMING_SIX_MONTHS_AGO, date( 'Ymd', strtotime( SHAMING_TODAY . ' -6 mon
 // TODO: replace `class-plugin-name.php` with the name of the actual plugin's class file
 require_once( plugin_dir_path( __FILE__ ) . 'class-update-shaming.php' );
 
-// Register hooks that are fired when the plugin is activated, deactivated, and uninstalled, respectively.
-// TODO: replace Update_Shaming with the name of the plugin defined in `class-plugin-name.php`
-register_activation_hook( __FILE__, array( 'Update_Shaming', 'activate' ) );
-register_deactivation_hook( __FILE__, array( 'Update_Shaming', 'deactivate' ) );
-
 // TODO: replace Update_Shaming with the name of the plugin defined in `class-plugin-name.php`
 Update_Shaming::get_instance();
