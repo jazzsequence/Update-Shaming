@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name.
+ * Update Shaming.
  *
  * @package   Update_Shaming
  * @author    Chris Reynolds <hello@chrisreynolds.io>
@@ -71,15 +71,6 @@ class Update_Shaming {
 
 		// Load admin style sheet and JavaScript.
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_scripts' ) );
-
-		// Load public-facing style sheet and JavaScript.
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-
-		// Define custom functionality. Read more about actions and filters: http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
-		add_action( 'TODO', array( $this, 'action_method_name' ) );
-		add_filter( 'TODO', array( $this, 'filter_method_name' ) );
 
 	}
 
@@ -98,28 +89,6 @@ class Update_Shaming {
 		}
 
 		return self::$instance;
-	}
-
-	/**
-	 * Fired when the plugin is activated.
-	 *
-	 * @since   0.1
-	 *
-	 * @param    boolean    $network_wide    True if WPMU superadmin uses "Network Activate" action, false if WPMU is disabled or plugin is activated on an individual blog.
-	 */
-	public static function activate( $network_wide ) {
-		// TODO: Define activation functionality here
-	}
-
-	/**
-	 * Fired when the plugin is deactivated.
-	 *
-	 * @since   0.1
-	 *
-	 * @param    boolean    $network_wide    True if WPMU superadmin uses "Network Deactivate" action, false if WPMU is disabled or plugin is deactivated on an individual blog.
-	 */
-	public static function deactivate( $network_wide ) {
-		// TODO: Define deactivation functionality here
 	}
 
 	/**
@@ -157,44 +126,6 @@ class Update_Shaming {
 	}
 
 	/**
-	 * Register and enqueue admin-specific JavaScript.
-	 *
-	 * @since   0.1.0
-	 *
-	 * @return    null    Return early if no settings page is registered.
-	 */
-	public function enqueue_admin_scripts() {
-
-		if ( ! isset( $this->plugin_screen_hook_suffix ) ) {
-			return;
-		}
-
-		$screen = get_current_screen();
-		if ( $screen->id == $this->plugin_screen_hook_suffix ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'js/admin.js', __FILE__ ), array( 'jquery' ), $this->version );
-		}
-
-	}
-
-	/**
-	 * Register and enqueue public-facing style sheet.
-	 *
-	 * @since   0.1
-	 */
-	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_slug . '-plugin-styles', plugins_url( 'css/public.css', __FILE__ ), array(), $this->version );
-	}
-
-	/**
-	 * Register and enqueues public-facing JavaScript files.
-	 *
-	 * @since   0.1
-	 */
-	public function enqueue_scripts() {
-		wp_enqueue_script( $this->plugin_slug . '-plugin-script', plugins_url( 'js/public.js', __FILE__ ), array( 'jquery' ), $this->version );
-	}
-
-	/**
 	 * Register the administration menu for this plugin into the WordPress Dashboard menu.
 	 *
 	 * @since   0.1
@@ -209,8 +140,8 @@ class Update_Shaming {
 		 */
 		$this->plugin_screen_hook_suffix = add_submenu_page(
 			'edit.php?post_type=page',
-			__( 'Out of date pages', 'update-shaming' ),
-			__( 'Outdated Pages', 'update-shaming' ),
+			__( 'Out of Date Pages', 'update-shaming' ),
+			__( 'Out of Date Pages', 'update-shaming' ),
 			'publish_page',
 			$this->plugin_slug,
 			array( $this, 'display_plugin_admin_page' )
