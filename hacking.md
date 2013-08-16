@@ -16,7 +16,7 @@ Shaming content editors into updating page content that has not been touched in 
 
 * **Captions** - The captions are there to make the images more universally funny and recognizable. Some caption meanings may be lost in translation, but that leads to...
 
-* **Translations** - Translators should feel free to make the captions their own in a way that makes the most sense in their language. There should not be any requirement (or attempt at a requirement) that the captions are "set in stone" and can't ever change.
+* **Translations** - Translators should feel free to make the captions their own in a way that makes the most sense in their language. There should not be any requirement (or assumption of a requirement) that the captions are "set in stone" and can't be different than their source. All other translatable strings should be handled normally.
 
 ##Code Organization
 * Plugin framework pulled from Tom McFarlin's [WordPress Plugin Boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate), with most of the code living in `class-update-shaming.php`.
