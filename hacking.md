@@ -18,6 +18,8 @@ Shaming content editors into updating page content that has not been touched in 
 
 * **Translations** - Translators should feel free to make the captions their own in a way that makes the most sense in their language. There should not be any requirement (or assumption of a requirement) that the captions are "set in stone" and can't be different than their source. All other translatable strings should be handled normally.
 
+* **Global Definitions** - Global definitions are used so as to not keep runing the same code to set variables for various year checks.
+
 ##Code Organization
 * Plugin framework pulled from Tom McFarlin's [WordPress Plugin Boilerplate](https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate), with most of the code living in `class-update-shaming.php`.
 * Admin page is located in `views/admin.php`.
