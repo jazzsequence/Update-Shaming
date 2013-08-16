@@ -24,3 +24,8 @@ dd.wp-caption-dd {
 .caption {
 	font-size: 1.4em;
 }
+.wp-caption-dt img {
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 5px;
+}
