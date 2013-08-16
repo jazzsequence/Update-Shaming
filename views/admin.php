@@ -191,7 +191,7 @@
 		}
 		if ( !$five_year_heading && !$four_year_heading && !$three_year_heading && !$two_year_heading && !$one_year_heading && !$six_month_heading && $winning ) {
 			echo $wrap_open;
-			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $winning_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd"><span class="caption">' . $winning_reaction['caption'] . '</span><br />' . __( 'Source:', 'update-shaming' ) . ' ' . $winning_reaction['source'] . '</dd></dl>';
+			echo '<dl class="wp-caption"><dt class="wp-caption-dt"><img src="'. $winning_reaction['url'] . '" class="reactiongif" /></dt><dd class="wp-caption-dd">' . __( 'Source:', 'update-shaming' ) . ' ' . $winning_reaction['source'] . '</dd></dl>';
 			echo $winning;
 			echo $wrap_close;
 		}
