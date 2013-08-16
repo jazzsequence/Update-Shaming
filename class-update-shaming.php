@@ -228,106 +228,147 @@ class Update_Shaming {
 	}
 
 	/**
-	 * NOTE:  Actions are points in the execution of a page or process
-	 *        lifecycle that WordPress fires.
+	 * Check if the passed date is more than five years old.
 	 *
-	 *        WordPress Actions: http://codex.wordpress.org/Plugin_API#Actions
-	 *        Action Reference:  http://codex.wordpress.org/Plugin_API/Action_Reference
+	 * @since 	0.1
 	 *
-	 * @since   0.1
+	 * @uses 	SHAMING_FIVE_YEARS_AGO
+	 *
+	 * @param 	string 		$post_date 		the date of the post
+	 *
+	 * @return 	boolean
 	 */
-	public function action_method_name() {
-		// TODO: Define your action hook callback here
+	public function five_years_check($post_date) {
+
+		if ( $post_date <= SHAMING_FIVE_YEARS_AGO )
+			return true;
+
+		return false;
 	}
 
 	/**
-	 * NOTE:  Filters are points of execution in which WordPress modifies data
-	 *        before saving it or sending it to the browser.
+	 * Check if the passed date is between four and five years old.
 	 *
-	 *        WordPress Filters: http://codex.wordpress.org/Plugin_API#Filters
-	 *        Filter Reference:  http://codex.wordpress.org/Plugin_API/Filter_Reference
+	 * @since 	0.1
 	 *
-	 * @since   0.1
+	 * @uses 	SHAMING_FOUR_YEARS_AGO
+	 *
+	 * @param 	string 		$post_date 		the date of the post
+	 *
+	 * @return 	boolean
 	 */
-	public function filter_method_name() {
-		// TODO: Define your filter hook callback here
-	}
-
-	public function five_years_check($post_date) {
-		$today = date('Y-m-d');
-		$five_years_ago = date( 'Ymd', strtotime( $today . ' -5 years' ) );
-
-		if ( $post_date <= $five_years_ago )
-			return true;
-
-		return false;
-	}
-
 	public function four_years_check($post_date) {
-		$today = date('Y-m-d');
-		$four_years_ago = date( 'Ymd', strtotime( $today . ' -4 years' ) );
-		$five_years_ago = date( 'Ymd', strtotime( $today . ' -5 years' ) );
 
-		if ( ( $post_date <= $four_years_ago ) && ( $post_date > $five_years_ago ) )
+		if ( ( $post_date <= SHAMING_FOUR_YEARS_AGO ) && ( $post_date > SHAMING_FIVE_YEARS_AGO ) )
 			return true;
 
 		return false;
 	}
 
+	/**
+	 * Check if the passed date is between three and four years old.
+	 *
+	 * @since 	0.1
+	 *
+	 * @uses 	SHAMING_THREE_YEARS_AGO
+	 *
+	 * @param 	string 		$post_date 		the date of the post
+	 *
+	 * @return 	boolean
+	 */
 	public function three_years_check($post_date) {
-		$today = date('Y-m-d');
-		$three_years_ago = date( 'Ymd', strtotime( $today . ' -3 years' ) );
-		$four_years_ago = date( 'Ymd', strtotime( $today . ' -4 years' ) );
 
-		if ( ( $post_date <= $three_years_ago ) && ( $post_date > $four_years_ago ) )
+		if ( ( $post_date <= SHAMING_THREE_YEARS_AGO ) && ( $post_date > SHAMING_FOUR_YEARS_AGO ) )
 			return true;
 
 		return false;
 	}
 
+	/**
+	 * Check if the passed date is between two and three years old.
+	 *
+	 * @since 	0.1
+	 *
+	 * @uses 	SHAMING_TWO_YEARS_AGO
+	 *
+	 * @param 	string 		$post_date 		the date of the post
+	 *
+	 * @return 	boolean
+	 */
 	public function two_years_check($post_date) {
-		$today = date('Y-m-d');
-		$two_years_ago = date( 'Ymd', strtotime( $today . ' -2 years' ) );
-		$three_years_ago = date( 'Ymd', strtotime( $today . ' -3 years' ) );
 
-		if ( ( $post_date <= $two_years_ago ) && ( $post_date > $three_years_ago ) )
+		if ( ( $post_date <= SHAMING_TWO_YEARS_AGO ) && ( $post_date > SHAMING_THREE_YEARS_AGO ) )
 			return true;
 
 		return false;
 	}
 
+	/**
+	 * Check if the passed date is between one and two years old.
+	 *
+	 * @since 	0.1
+	 *
+	 * @uses 	SHAMING_ONE_YEARS_AGO
+	 *
+	 * @param 	string 		$post_date 		the date of the post
+	 *
+	 * @return 	boolean
+	 */
 	public function one_year_check($post_date) {
-		$today = date('Y-m-d');
-		$one_year_ago = date( 'Ymd', strtotime( $today . ' -1 year' ) );
-		$two_years_ago = date( 'Ymd', strtotime( $today . ' -2 years' ) );
 
-		if ( ( $post_date <= $one_year_ago ) && ( $post_date > $two_years_ago ) )
+		if ( ( $post_date <= SHAMING_ONE_YEAR_AGO ) && ( $post_date > SHAMING_TWO_YEARS_AGO ) )
 			return true;
 
 		return false;
 	}
 
+	/**
+	 * Check if the passed date is between six months and one year old.
+	 *
+	 * @since 	0.1
+	 *
+	 * @uses 	SHAMING_FIVE_YEARS_AGO
+	 *
+	 * @param 	string 		$post_date 		the date of the post
+	 *
+	 * @return 	boolean
+	 */
 	public function six_months_check($post_date) {
-		$today = date('Y-m-d');
-		$six_months_ago = date( 'Ymd', strtotime( $today . ' -6 months' ) );
-		$one_year_ago = date( 'Ymd', strtotime( $today . ' -1 years' ) );
 
-		if ( ( $post_date <= $six_months_ago ) && ( $post_date > $one_year_ago ) )
+		if ( ( $post_date <= SHAMING_SIX_MONTHS_AGO ) && ( $post_date > SHAMING_ONE_YEAR_AGO ) )
 			return true;
 
 		return false;
 	}
 
+	/**
+	 * Check if the passed date is less than six months old.
+	 *
+	 * @since 	0.1
+	 *
+	 * @uses 	SHAMING_FIVE_YEARS_AGO
+	 *
+	 * @param 	string 		$post_date 		the date of the post
+	 *
+	 * @return 	boolean
+	 */
 	public function up_to_date_check($post_date) {
-		$today = date('Y-m-d');
-		$six_months_ago = date( 'Ymd', strtotime( $today . ' -6 months' ) );
 
-		if ( $post_date > $six_months_ago )
+		if ( $post_date > SHAMING_SIX_MONTHS_AGO )
 			return true;
 
 		return false;
 	}
 
+	/**
+	 * Reactions array
+	 *
+	 * an array for...reactions
+	 *
+	 * @since 	0.1
+	 *
+	 * @return 	array 		return the array of possible reactions
+	 */
 	public function reactions() {
 		$reactions = array(
 			'five-years' => array(
