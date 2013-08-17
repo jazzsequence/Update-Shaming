@@ -5,12 +5,16 @@
 .ood .id {
 	text-align: center;
 	width: 5%;
+	vertical-align: middle;
 }
 .ood .fixit {
 	width: 5%;
+	vertical-align: middle;
+	text-align: center;
 }
 .ood .modified {
 	width: 20%;
+	vertical-align: middle;
 }
 .ood .title {
 	width: 70%;
