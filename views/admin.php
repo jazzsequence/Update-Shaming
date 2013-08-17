@@ -59,9 +59,9 @@
 				$five_year_heading = '<h2>' . __( 'These pages haven\'t been updated in more than five years!', 'update-shaming' ) . '</h2>';
 				$five_year_posts .= '<tr>';
 				$five_year_posts .= '<td class="id">' . get_the_ID() . '</td>';
-				$five_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong></td>';
+				$five_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong><br /><a href="'.get_permalink().'" target="_blank">' . __('View Page', 'update-shaming') .'</a></td>';
 				$five_year_posts .= '<td class="modified">' . get_the_modified_date() . '</td>';
-				$five_year_posts .= '<td class="fixit"><a href="post.php?post='.get_the_ID().'&action=edit"><span class="trash">Edit</span></a></td>';
+				$five_year_posts .= '<td class="fixit"><span class="trash"><a href="post.php?post='.get_the_ID().'&action=edit">Edit</a></span></td>';
 			endif; // end five or more years
 
 			// posts more than four years old
@@ -70,9 +70,9 @@
 				$four_year_heading = '<h2>' . __( 'These pages haven\'t been updated in more than four years!', 'update-shaming' ) . '</h2>';
 				$four_year_posts .= '<tr>';
 				$four_year_posts .= '<td class="id">' . get_the_ID() . '</td>';
-				$four_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong></td>';
+				$four_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong><br /><a href="'.get_permalink().'" target="_blank">' . __('View Page', 'update-shaming') .'</a></td>';
 				$four_year_posts .= '<td class="modified">' . get_the_modified_date() . '</td>';
-				$four_year_posts .= '<td class="fixit"><a href="post.php?post='.get_the_ID().'&action=edit"><span class="trash">Edit</span></a></td>';
+				$four_year_posts .= '<td class="fixit"><span class="trash"><a href="post.php?post='.get_the_ID().'&action=edit">Edit</a></span></td>';
 			endif;// end four to five years
 
 			// posts more than three years old
@@ -81,9 +81,9 @@
 				$three_year_heading = '<h2>' . __( 'These pages haven\'t been updated in more than three years!', 'update-shaming' ) . '</h2>';
 				$three_year_posts .= '<tr>';
 				$three_year_posts .= '<td class="id">' . get_the_ID() . '</td>';
-				$three_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong></td>';
+				$three_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong><br /><a href="'.get_permalink().'" target="_blank">' . __('View Page', 'update-shaming') .'</a></td>';
 				$three_year_posts .= '<td class="modified">' . get_the_modified_date() . '</td>';
-				$three_year_posts .= '<td class="fixit"><a href="post.php?post='.get_the_ID().'&action=edit"><span class="trash">Edit</span></a></td>';
+				$three_year_posts .= '<td class="fixit"><span class="trash"<a href="post.php?post='.get_the_ID().'&action=edit">>></aEdit</span></td>';
 			endif;// end three to four years
 
 			// posts more than two years old
@@ -92,9 +92,9 @@
 				$two_year_heading = '<h2>' . __( 'These pages haven\'t been updated in more than two years!', 'update-shaming' ) . '</h2>';
 				$two_year_posts .= '<tr>';
 				$two_year_posts .= '<td class="id">' . get_the_ID() . '</td>';
-				$two_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong></td>';
+				$two_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong><br /><a href="'.get_permalink().'" target="_blank">' . __('View Page', 'update-shaming') .'</a></td>';
 				$two_year_posts .= '<td class="modified">' . get_the_modified_date() . '</td>';
-				$two_year_posts .= '<td class="fixit"><a href="post.php?post='.get_the_ID().'&action=edit"><span class="trash">Edit</span></a></td>';
+				$two_year_posts .= '<td class="fixit"><span class="tt"><a href="post.php?post='.get_the_ID().'&action=edirash">Edit</a></span></td>';
 			endif;// end two to three years
 
 			// posts more than one year old
@@ -103,9 +103,9 @@
 				$one_year_heading = '<h2>' . __( 'These pages haven\'t been updated in more than a year.', 'update-shaming' ) . '</h2>';
 				$one_year_posts .= '<tr>';
 				$one_year_posts .= '<td class="id">' . get_the_ID() . '</td>';
-				$one_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong></td>';
+				$one_year_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong><br /><a href="'.get_permalink().'" target="_blank">' . __('View Page', 'update-shaming') .'</a></td>';
 				$one_year_posts .= '<td class="modified">' . get_the_modified_date() . '</td>';
-				$one_year_posts .= '<td class="fixit"><a href="post.php?post='.get_the_ID().'&action=edit"><span class="trash">Edit</span></a></td>';
+				$one_year_posts .= '<td class="fixit"><span class="tt"><a href="post.php?post='.get_the_ID().'&action=edirash">Edit</a></span></td>';
 			endif;// end one to two years
 
 			// posts more than six months old
@@ -114,9 +114,9 @@
 				$six_month_heading = '<h2>' . __( 'These pages haven\'t been updated in the last six months.', 'update-shaming' ) . '</h2>';
 				$six_month_posts .= '<tr>';
 				$six_month_posts .= '<td class="id">' . get_the_ID() . '</td>';
-				$six_month_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong></td>';
+				$six_month_posts .= '<td class="title"><strong><a href="post.php?post='.get_the_ID().'&action=edit">' . get_the_title() . '</a></strong><br /><a href="'.get_permalink().'" target="_blank">' . __('View Page', 'update-shaming') .'</a></td>';
 				$six_month_posts .= '<td class="modified">' . get_the_modified_date() . '</td>';
-				$six_month_posts .= '<td class="fixit"><a href="post.php?post='.get_the_ID().'&action=edit"><span class="trash">Edit</span></a></td>';
+				$six_month_posts .= '<td class="fixit"><span class="trash"><a href="post.php?post='.get_the_ID().'&action=edit">Edit</a></span></td>';
 			endif;// end one to two years
 
 			// posts are more recent than six months
