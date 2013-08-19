@@ -24,7 +24,7 @@ class Update_Shaming {
 	 *
 	 * @var     string
 	 */
-	protected $version = '0.1';
+	protected $version = '0.3';
 
 	/**
 	 * Unique identifier for your plugin.
@@ -324,9 +324,9 @@ class Update_Shaming {
 					'caption' => __('Oprah says "uh-uh".', 'update-shaming')
 				),
 				4 => array(
-					'url' => 'http://stream1.gifsoup.com/view7/2905513/fix-it-o.gif',
-					'source' => 'gifsoup.com',
-					'caption' => __('FIX IT!', 'update-shaming')
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/08/give-up.gif',
+					'source' => 'reactiongifs.com',
+					'caption' => __('I give up.', 'update-shaming')
 				)
 			),
 			'four-years' => array(
@@ -358,9 +358,9 @@ class Update_Shaming {
 			),
 			'three-years' => array(
 				0 => array(
-					'url' => 'http://i.imgur.com/0QpiKCi.gif',
-					'source' => 'imgur.com',
-					'caption' => __('Rowan Atkinson is at a loss for words.', 'update-shaming')
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/08/disappointment.gif',
+					'source' => 'reactiongifs.com',
+					'caption' => __('That\'s disappointing.', 'update-shaming')
 				),
 				1 => array(
 					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/07/disappointed.gif',
@@ -412,9 +412,9 @@ class Update_Shaming {
 			),
 			'one-year' => array(
 				0 => array(
-					'url' => 'http://i.imgur.com/Dg5J7.gif',
-					'source' => 'imgur.com',
-					'caption' => __('This makes Mr. T sad.', 'update-shaming')
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/04/sad_face.gif',
+					'source' => 'reactiongifs.com',
+					'caption' => __('This makes me sad.', 'update-shaming')
 				),
 				1 => array(
 					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/07/tense.gif',
@@ -449,9 +449,9 @@ class Update_Shaming {
 					'caption' => __('Joe Biden suspects some malarkey.', 'update-shaming')
 				),
 				2 => array(
-					'url' => 'http://i.imgur.com/trwrzPg.gif',
-					'source' => 'imgur.com',
-					'caption' => __('*sarcastic clapping*', 'update-shaming')
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/08/dr-mccoy-and-captain-kirk-approve.gif',
+					'source' => 'reactiongifs.com',
+					'caption' => __('Kirk and McCoy think this is okay.', 'update-shaming')
 				),
 				3 => array(
 					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/06/Jay-Z-so-so.gif',
@@ -466,20 +466,20 @@ class Update_Shaming {
 			),
 			'winning' => array(
 				0 => array(
-					'url' => 'http://alfa.gifs-planet.com/new/1696.gif',
-					'source' => 'gifs-planet.com',
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/08/excited-adventure-time.gif',
+					'source' => 'reactiongifs.com',
 				),
 				1 => array(
-					'url' => 'http://i.imgur.com/X9d5tnd.gif',
-					'source' => 'imgur.com',
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/08/roxbury.gif',
+					'source' => 'reactiongifs.com',
 				),
 				2 => array(
 					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/08/dancer.gif',
 					'source' => 'reactiongifs.com',
 				),
 				3 => array(
-					'url' => 'http://i.imgur.com/MIj6o.gif',
-					'source' => 'imgur.com',
+					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/08/barney-yes.gif',
+					'source' => 'reactiongifs.com',
 				),
 				4 => array(
 					'url' => 'http://www.reactiongifs.com/wp-content/uploads/2013/03/in-the-zone.gif',
