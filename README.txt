@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: pages, content, updates, old, reaction gifs
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 0.1
+Stable tag: 0.3
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -14,7 +14,7 @@ The only WordPress plugin not afraid to give you dirty looks.
 
 The purpose of this plugin is to shame content editors into updating page content that has not been touched in a long time, while simultaneously providing an overview of the oldest pages on a site. Also: gifs.
 
-The plugin adds an **Out of Date Pages** subpage under the Pages menu, which breaks all the pages on the site down by last modified date, grouped by years since it's been modified. Each page listed has a link to edit the page.
+The plugin adds an **Out of Date Pages** subpage under the Pages menu, which breaks all the pages on the site down by last modified date, grouped by years since it's been modified. Each page listed has a link to edit the page. All images on the Out of Date Pages subpage are sourced from [reactiongifs.com](http://reactiongifs.com).
 
 == Installation ==
 
@@ -37,6 +37,14 @@ Sure. Submit a ticket [here](https://github.com/jazzsequence/Update-Shaming/issu
 None yet.
 
 == Changelog ==
+
+= 0.3 =
+* Removed all non-reactiongif.com images and replaced with reactiongif alternatives.
+* Updated readme files and hacking.md.
+
+= 0.2 =
+* Added a view page link
+* Cleaned up some alignment issues in the tables
 
 = 0.1 =
 * Initial release. See hacking.md for details about the code.

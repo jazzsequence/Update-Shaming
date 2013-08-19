@@ -12,7 +12,7 @@ Shaming content editors into updating page content that has not been touched in 
 
 * **Reaction Gifs** - The core tenet of the plugin. It's not called 'shaming' for no reason, these attempt to call greater attention to how long it's been since these pages have been touched as well as being (or trying to be) funny.
 
-* **External Sources & Licensing** Based on [this](https://twitter.com/Ipstenu/status/368183356694876160) Twitter conversation, I'm going under the assumption that externally linking to the reaction gifs and displaying their sources is kosher for inclusion in WordPress.org. I hope so, since [last time](http://wordpress.org/support/topic/bannermodal-option-doesnt-set-right?replies=3#post-4377860), I had to include the image files in the plugin assets -- if that was the case here, I don't know that the licensing would fall under the GPL and the previously-mentioned "core tenet" of the plugin would be broken. I tried as best I could to consolidate the sources to as few as possible, pulling most of the images from reactiongifs.com with a few from imgur.com (particularly [this archive](http://reactiongifsarchive.imgur.com/)) and a few from elsewhere. Whenever possible, I tried to use [reactiongifs.com](http://reactiongifs.com) partially to keep things consistent but also just because it's a WordPress-powered site.
+* **External Sources & Licensing** All images are sourced from [reactiongifs.com](http://reactiongifs.com) to keep things stable and consistent but also partially because it's a WordPress-powered site. Images are copyright the original uploader.
 
 * **Captions** - The captions are there to make the images more universally funny and recognizable. Some caption meanings may be lost in translation, but that leads to...
 
