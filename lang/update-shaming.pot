@@ -2,26 +2,208 @@
 # This file is distributed under the same license as the TODO package.
 msgid ""
 msgstr ""
-"Project-Id-Version: TODO 1.0.0\n"
+"Project-Id-Version: Update Shaming\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/plugin-name\n"
-"POT-Creation-Date: 2013-05-10 11:23:19+00:00\n"
+"POT-Creation-Date: 2014-08-11 07:35-0700\n"
+"PO-Revision-Date: 2014-08-11 07:35-0700\n"
+"Last-Translator: Chris Reynolds <chris@jazzsequence.com>\n"
+"Language-Team: Museum Themes <chris@arcanepalette.com>\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-05-10 10:37-0500\n"
-"Last-Translator: FULL NAME <email@example.com>\n"
-"Language-Team: LANGUAGE <translations@example.com >\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.7\n"
 "X-Poedit-KeywordsList: __;_e;_n;_x;esc_html_e;esc_html__;esc_attr_e;"
 "esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2\n"
 "X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ./views\n"
 
-#: class-plugin-name.php:214
+#: views/admin.php:47
+msgid "Post ID"
+msgstr ""
+
+#: views/admin.php:47
 msgid "Page Title"
 msgstr ""
 
-#: class-plugin-name.php:215
-msgid "Menu Text"
+#: views/admin.php:47
+msgid "Last Modified"
+msgstr ""
+
+#: views/admin.php:47
+msgid "FIX IT!!"
+msgstr ""
+
+#: views/admin.php:59
+msgid "These pages haven't been updated in more than five years!"
+msgstr ""
+
+#: views/admin.php:62 views/admin.php:73 views/admin.php:84 views/admin.php:95
+#: views/admin.php:106 views/admin.php:117
+#, fuzzy
+msgid "View Page"
+msgstr "Смотреть рецензию"
+
+#: views/admin.php:70
+msgid "These pages haven't been updated in more than four years!"
+msgstr ""
+
+#: views/admin.php:81
+msgid "These pages haven't been updated in more than three years!"
+msgstr ""
+
+#: views/admin.php:92
+msgid "These pages haven't been updated in more than two years!"
+msgstr ""
+
+#: views/admin.php:103
+msgid "These pages haven't been updated in more than a year."
+msgstr ""
+
+#: views/admin.php:114
+msgid "These pages haven't been updated in the last six months."
+msgstr ""
+
+#: views/admin.php:125
+msgid ""
+"You're winning the internet. All your pages are (more or less) up-to-date."
+msgstr ""
+
+#: views/admin.php:129
+msgid "I couldn't find any pages. None at all."
+msgstr ""
+
+#: views/admin.php:136 views/admin.php:147 views/admin.php:158
+#: views/admin.php:169 views/admin.php:180 views/admin.php:191
+#: views/admin.php:201
+msgid "Source:"
+msgstr ""
+
+#: class-update-shaming.php:143 class-update-shaming.php:144
+#, fuzzy
+msgid "Out of Date Pages"
+msgstr "Книги нет на складе"
+
+#: class-update-shaming.php:309
+msgid "There's no hope!"
+msgstr ""
+
+#: class-update-shaming.php:314
+msgid "Excuse me."
+msgstr ""
+
+#: class-update-shaming.php:319
+msgid "OMG!"
+msgstr ""
+
+#: class-update-shaming.php:324
+msgid "Oprah says \"uh-uh\"."
+msgstr ""
+
+#: class-update-shaming.php:329
+msgid "I give up."
+msgstr ""
+
+#: class-update-shaming.php:336
+msgid "WAT?!"
+msgstr ""
+
+#: class-update-shaming.php:341
+msgid "*facepalm*"
+msgstr ""
+
+#: class-update-shaming.php:346
+msgid "That is shocking."
+msgstr ""
+
+#: class-update-shaming.php:351
+msgid "Ralph Furley is terrified."
+msgstr ""
+
+#: class-update-shaming.php:356
+msgid "WTF?"
+msgstr ""
+
+#: class-update-shaming.php:363
+msgid "That's disappointing."
+msgstr ""
+
+#: class-update-shaming.php:368
+msgid "I just...*sigh* whatever."
+msgstr ""
+
+#: class-update-shaming.php:373
+msgid "George Clooney is judging you."
+msgstr ""
+
+#: class-update-shaming.php:378
+#, fuzzy
+msgid "Sad grandma is sad."
+msgstr "Grandma's Hat Box"
+
+#: class-update-shaming.php:383
+msgid "That's very disappointing."
+msgstr ""
+
+#: class-update-shaming.php:390
+msgid "Tell me more about how you keep your content updated."
+msgstr ""
+
+#: class-update-shaming.php:395
+msgid "Great job! Wait...what?"
+msgstr ""
+
+#: class-update-shaming.php:400
+msgid "The King is unimpressed."
+msgstr ""
+
+#: class-update-shaming.php:405
+msgid "David Bowie disapproves."
+msgstr ""
+
+#: class-update-shaming.php:410
+msgid "Grumpy Cat is not amused."
+msgstr ""
+
+#: class-update-shaming.php:417
+msgid "This makes me sad."
+msgstr ""
+
+#: class-update-shaming.php:422
+msgid "Brad Pitt is bored."
+msgstr ""
+
+#: class-update-shaming.php:427
+msgid "Nice try."
+msgstr ""
+
+#: class-update-shaming.php:432
+msgid "Nice work! (I guess...)"
+msgstr ""
+
+#: class-update-shaming.php:437
+msgid "Not good enough."
+msgstr ""
+
+#: class-update-shaming.php:444
+msgid "Really?"
+msgstr ""
+
+#: class-update-shaming.php:449
+msgid "Joe Biden suspects some malarkey."
+msgstr ""
+
+#: class-update-shaming.php:454
+msgid "Kirk and McCoy think this is okay."
+msgstr ""
+
+#: class-update-shaming.php:459
+msgid "Jay-Z thinks this is so-so."
+msgstr ""
+
+#: class-update-shaming.php:464
+msgid "John Cleese is not impressed."
 msgstr ""
