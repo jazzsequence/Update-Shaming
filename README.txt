@@ -3,8 +3,8 @@ Contributors: jazzs3quence
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AWM2TG
 Tags: pages, content, updates, old, reaction gifs
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 0.3
+Tested up to: 4.2.1
+Stable tag: 0.3.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,6 +37,10 @@ Sure. Submit a ticket [here](https://github.com/jazzsequence/Update-Shaming/issu
 None yet.
 
 == Changelog ==
+
+= 0.3.1 =
+* version bump, no major changes
+* added plugin icon
 
 = 0.3 =
 * Removed all non-reactiongif.com images and replaced with reactiongif alternatives.
